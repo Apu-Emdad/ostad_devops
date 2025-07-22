@@ -11,18 +11,18 @@ A **container** is a lightweight, standalone package that contains:
 
 Think of it like a mini virtual machine, but more efficient and faster.
 
-### Why use Docker?
+#### Why use Docker?
 
 - **Consistency:** Works the same on any machine (dev, staging, prod)
 - **Isolation:** Each container runs independently
 - **Portability:** Runs anywhere Docker is installed
 - **Speed:** Much faster than traditional VMs
 
-### Real-life Analogy:
+#### Real-life Analogy:
 
 Think of a container like a **shipping container**. No matter what’s inside—cars, electronics, clothes—the container fits on any ship, train, or truck. Similarly, a Docker container can run on any system with Docker installed.
 
-### Common Terms:
+#### Common Terms:
 
 | Term       | Meaning                                      |
 | ---------- | -------------------------------------------- |
@@ -31,7 +31,7 @@ Think of a container like a **shipping container**. No matter what’s inside—
 | Dockerfile | Instructions to build an image               |
 | Docker Hub | Public registry to share and download images |
 
-### Quick Recap
+#### Quick Recap
 
 1. **Docker**
    A platform to **build, run, and manage containers**. It ensures consistency and portability across environments.
@@ -46,7 +46,7 @@ To use Docker, you need to install the **Docker Engine**, which includes everyth
 
 ---
 
-### Step-by-Step Installation (Desktop)
+#### Step-by-Step Installation (Desktop)
 
 #### 🪟 **For Windows 10/11 (Home/Pro)**
 
@@ -62,7 +62,7 @@ Verify installation:
 docker --version
 ```
 
-### 🐧 **For Linux (Ubuntu example)**
+#### 🐧 **For Linux (Ubuntu example)**
 
 ```
 sudo apt update
@@ -260,14 +260,14 @@ Now we’ll learn how to create a **Dockerfile** to build your own Docker image.
 
 ---
 
-### What is a Dockerfile?
+#### What is a Dockerfile?
 
 - A text file with instructions to build a Docker image.
 - Defines base image, app files, commands to run, environment, etc.
 
 ---
 
-### Basic Dockerfile Example
+#### Basic Dockerfile Example
 
 write the `Dockerfile` in the **root directory of your project**
 
@@ -296,7 +296,7 @@ CMD ["npm", "run", "start:dev"]
 
 ---
 
-### Explanation of commands:
+#### Explanation of commands:
 
 | Instruction | Description                                          |
 | ----------- | ---------------------------------------------------- |
@@ -309,7 +309,7 @@ CMD ["npm", "run", "start:dev"]
 
 ---
 
-### How to build image from Dockerfile
+#### How to build image from Dockerfile
 
 In the folder with Dockerfile:
 
@@ -322,13 +322,13 @@ docker build -t my-node-app .
 
 ---
 
-### **1.4 Running and Managing Containers**
+#### **1.4 Running and Managing Containers**
 
 Now that you’ve built a Docker image, let’s go deeper into running and managing containers.
 
 ---
 
-### Starting a Container
+#### Starting a Container
 
 ```
 docker run -p 3000:3000 university-management-system
@@ -340,7 +340,7 @@ docker run -p 3000:3000 university-management-system
 
 ---
 
-### Run in Background (Detached Mode)
+#### Run in Background (Detached Mode)
 
 ```
 docker run -d -p 3000:3000 university-management-system
@@ -351,7 +351,7 @@ docker run -d -p 3000:3000 university-management-system
 
 ---
 
-### List Running Containers
+#### List Running Containers
 
 ```
 docker ps
@@ -368,7 +368,7 @@ docker ps -a
 
 ---
 
-### View Logs of a Container
+#### View Logs of a Container
 
 ```
 docker logs <container_id>
@@ -378,7 +378,7 @@ Get `<container_id>` from `docker ps`
 
 ---
 
-### Stop a Running Container
+#### Stop a Running Container
 
 ```
 docker stop <container_id>
@@ -386,7 +386,7 @@ docker stop <container_id>
 
 ---
 
-### Remove a Stopped Container
+#### Remove a Stopped Container
 
 ```
 docker rm <container_id>
@@ -394,7 +394,7 @@ docker rm <container_id>
 
 ---
 
-### Remove an Image
+#### Remove an Image
 
 ```
 docker rmi university-management-system
