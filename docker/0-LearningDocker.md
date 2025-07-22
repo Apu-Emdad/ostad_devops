@@ -112,7 +112,7 @@ Now that Docker is installed and ready, let’s learn some basic commands to int
 
 ---
 
-### 1. **Check Docker Version**
+#### 1. **Check Docker Version**
 
 ```
 docker --version
@@ -122,7 +122,7 @@ Shows the installed Docker version.
 
 ---
 
-### 2. **Search for Images**
+#### 2. **Search for Images**
 
 ```
 docker search <image_name>
@@ -138,7 +138,7 @@ docker search nginx
 
 ---
 
-### 3. **Pull an Image**
+#### 3. **Pull an Image**
 
 ```
 docker pull <image_name>:<tag>
@@ -154,7 +154,7 @@ docker pull ubuntu:latest
 
 ---
 
-### 4. **List Images**
+#### 4. **List Images**
 
 ```
 docker images
@@ -164,7 +164,7 @@ Shows all images downloaded locally.
 
 ---
 
-### 5. **Run a Container**
+#### 5. **Run a Container**
 
 ```
 docker run <image_name>
@@ -182,7 +182,7 @@ docker run ubuntu
 
 ---
 
-### 6. **Run Interactive Container**
+#### 6. **Run Interactive Container**
 
 ```
 docker run -it <image_name> /bin/bash
@@ -200,7 +200,7 @@ You get a shell inside the container.
 
 ---
 
-### 7. **List Running Containers**
+#### 7. **List Running Containers**
 
 ```
 docker ps
@@ -216,7 +216,7 @@ docker ps -a
 
 ---
 
-### 8. **Stop a Container**
+#### 8. **Stop a Container**
 
 ```
 docker stop <container_id or name>
@@ -224,7 +224,7 @@ docker stop <container_id or name>
 
 ---
 
-### 9. **Remove a Container**
+#### 9. **Remove a Container**
 
 ```
 docker rm <container_id or name>
@@ -232,7 +232,7 @@ docker rm <container_id or name>
 
 ---
 
-### 10. **Remove an Image**
+#### 10. **Remove an Image**
 
 ```
 docker rmi <image_name>
@@ -240,7 +240,7 @@ docker rmi <image_name>
 
 ---
 
-### Summary Table:
+#### Summary Table:
 
 | Command                | Purpose                     |
 | ---------------------- | --------------------------- |
